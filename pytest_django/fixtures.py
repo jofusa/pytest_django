@@ -122,7 +122,7 @@ def client():
 
 
 @pytest.fixture()
-def admin_client(db):
+def admin_client():
     """A Django test client logged in as an admin user"""
     try:
         from django.contrib.auth import get_user_model
