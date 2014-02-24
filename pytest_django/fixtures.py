@@ -108,7 +108,7 @@ def transactional_db(request, _django_db_setup, _django_cursor_wrapper):
                 conn.close()
 
         request.addfinalizer(_django_cursor_wrapper.disable)
-        request.addfinalizer(flushdb)
+        #request.addfinalizer(flushdb)
 
 
 @pytest.fixture()
